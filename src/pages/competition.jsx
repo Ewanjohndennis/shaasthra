@@ -28,7 +28,7 @@ const Competition = () => {
                     className="bg-[#dfaa05] text-[#4d208d] border-[#4d208d] font-bold px-8 py-5 text-xl rounded-lg shadow-md hover:bg-[#4d208d] hover:text-[#dfaa05] transition-all w-full max-w-xs"
                     style={{ minWidth: '200px', textShadow: '0 2px 1px #000', fontSize: '30px' }}
                 >
-                    Competitions
+                    Competitions ☰
                 </button>
                 {menuOpen && (
                     <div className="mt-2 bg-[#6b2bc5] p-4 rounded-lg shadow-lg text-white flex flex-col gap-1" style={{textShadow: '0 1px 1px #000'}}>
