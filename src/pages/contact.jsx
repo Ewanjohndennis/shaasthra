@@ -15,7 +15,7 @@ const Contact = () => {
         <button
           onClick={toggleMenu}
           className="bg-[#dfaa05] text-[#4d208d] border-[#4d208d] font-bold px-8 py-5 text-xl rounded-lg shadow-md hover:bg-[#4d208d] hover:text-[#dfaa05] transition-all w-full max-w-xs"
-          style={{ minWidth: '200px', fontSize: '25px', textShadow: '0 1px 2px #000' }}
+          style={{ minWidth: '200px', fontSize: '25px', textShadow: '0 1px 2px #000' margin-top:'-10px' }}
         >
           Contact Us ☰
         </button>
