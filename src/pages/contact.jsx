@@ -11,7 +11,7 @@ const Contact = () => {
     <div className="relative min-h-screen flex flex-col items-center justify-center text-white px-4 py-10">
 
       <ScrollingBackground text="SHAASTRA" />
-      <div className="w-full sm:hidden text-center mb-4">
+      <div className="w-full sm:hidden text-center mb-2">
         <button
           onClick={toggleMenu}
           className="bg-[#dfaa05] text-[#4d208d] border-[#4d208d] font-bold px-8 py-5 text-xl rounded-lg shadow-md hover:bg-[#4d208d] hover:text-[#dfaa05] transition-all w-full max-w-xs"
