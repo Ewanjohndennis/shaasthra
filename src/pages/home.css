@@ -1,0 +1,22 @@
+svg path {
+  fill: transparent;
+  stroke:#ffffff;
+  stroke-width: .1;
+  stroke-dasharray: 700;
+  stroke-dashoffset: 700;
+  animation: popup 6s ease-in-out 3 forwards;
+}
+@keyframes popup {
+  0% {
+    stroke-dashoffset: 700;
+  }
+  70%{
+    fill: transparent;
+    border-color: #ffffff;
+  }
+  100% {
+    fill: #dfaa05;
+    stroke-dashoffset: 0;
+  } 
+  
+}

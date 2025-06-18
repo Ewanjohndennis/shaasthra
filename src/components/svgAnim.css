@@ -1,0 +1,23 @@
+/* src/components/svgAnim.css */
+
+.animated-path {
+  fill: transparent;
+  stroke: #ffffff;
+  stroke-width: 0.1;
+  stroke-dasharray: 700;
+  stroke-dashoffset: 700;
+  animation: popup 6s ease-in-out infinite forwards;
+}
+
+@keyframes popup {
+  0% {
+    stroke-dashoffset: 700;
+  }
+  70% {
+    fill: transparent;
+  }
+  100% {
+    fill: #b17618;
+    stroke-dashoffset: 0;
+  }
+}
