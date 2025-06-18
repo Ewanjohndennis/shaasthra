@@ -1,11 +1,10 @@
 import React, { useState } from "react";
 
-const images = [
-  "src/assets/img1.jpg",
-  "src/assets/img2.jpg",
-  "src/assets/img3.jpg",
-  ];
+import img1 from './assets/img1.jpg';
+import img2 from './assets/img2.jpg';
+import img3 from './assets/img3.jpg';
 
+const images = [img1, img2, img3];
 const Gallery = () => {
   const [current, setCurrent] = useState(0);
   const length = images.length;
