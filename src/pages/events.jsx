@@ -34,7 +34,7 @@ const EventSchedule = () => {
         <button
           onClick={toggleMenu}
           className="bg-[#dfaa05] text-[#4d208d] border-[#dfaa05] font-bold px-8 py-5 text-xl rounded-lg shadow-lgS hover:bg-[#4d208d] hover:text-[#dfaa05] transition-all w-full max-w-xs"
-          style={{ minWidth: '200px', fontSize: '25px', textShadow: '0 1px 2px #000' }}
+          style={{ minWidth: '200px', fontSize: '20px', textShadow: '0 1px 2px #000' }}
         >
           Event Schedule ☰
         </button>
