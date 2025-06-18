@@ -2,10 +2,11 @@ import { motion } from "framer-motion";
 import Home from "./pages/home";
 import Navbar from './components/navbar';
 import Footer from './components/footer';
-import Loader from './components/loader';
+import LoadingScreen from './components/loader';
 import AboutEvent from "./pages/about";
 import Contact from "./pages/contact";
 import Gallery from "./pages/gallery";
+import BackButton from './components/backbutton';
 import ScrollingBackground from "./components/scrollingtext";
 import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
 import React, { useState, useEffect } from 'react';
@@ -19,6 +20,8 @@ const LayoutWrapper = ({ children }) => {
 
   return (
     <>
+      {!isHome && <BackButton />}
+
       {isHome && <ScrollingBackground word="SHAASTRA" />}
 
       <main className={isHome ? "pt-32" : "p-6"}>
@@ -32,10 +35,10 @@ function App() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    setTimeout(() => setLoading(false), 1500);
+    setTimeout(() => setLoading(false), 3000);
   }, []);
   const location = window.location;
-  if (loading) return <Loader />;
+  if (loading) return <LoadingScreen />;
 
   return (
     <Router>
