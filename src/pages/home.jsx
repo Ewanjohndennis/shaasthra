@@ -29,7 +29,7 @@ export default function Home() {
         </h1>
 
         <h1 className="text-lg sm:text-xl font-bold text-[#dfaa05] max-w-xs sm:max-w-md md:max-w-xl pt-2">
-          21st January, 2025
+          21st January, 2026
         </h1>
       </motion.section>
     </main>
