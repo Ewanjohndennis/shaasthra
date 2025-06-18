@@ -32,7 +32,7 @@ export default function Navbar() {
     <div className="relative w-full z-50 overflow-x-hidden">
       {/* ✅ Topbar for HOME only */}
       {isHome && (
-        <nav className="fixed top-4 left-1/2 transform -translate-x-1/2 max-w-5xl w-[90%] px-6 py-4 flex justify-between items-center text-black border-b-2 border-[#8f5f13] rounded-xl shadow-2xl bg-[#6b2bc5] backdrop-blur-lg z-40">
+        <nav className="fixed top-4 left-1/2 transform -translate-x-1/2 max-w-5xl w-[90%] px-6 py-4 flex justify-between items-center text-[#4d208d] border-b-2 border-[#8f5f13] rounded-xl shadow-2xl bg-[#6b2bc5] backdrop-blur-lg z-40">
           <h1 className="text-xl text-[#DFAA05] font-bold">SHAASTRA 2025</h1>
           <div className="hidden md:flex space-x-4" style={{textShadow: '0 1px 1px #000'}}>
             <NavButton text="Home" href="/" />
