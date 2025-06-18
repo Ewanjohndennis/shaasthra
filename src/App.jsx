@@ -6,6 +6,7 @@ import Loader from './components/loader';
 import AboutEvent from "./pages/about";
 import Contact from "./pages/contact";
 import Gallery from "./pages/gallery";
+import BackButton from './components/backbutton';
 import ScrollingBackground from "./components/scrollingtext";
 import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
 import React, { useState, useEffect } from 'react';
@@ -13,16 +14,22 @@ import './App.css';
 import Competition from "./pages/competition";
 import EventSchedule from "./pages/events";
 
-function LayoutWrapper({ children }) {
+const LayoutWrapper = ({ children }) => {
   const location = useLocation();
   const isHome = location.pathname === "/";
 
   return (
-    <main className={isHome ? "pt-32" : "p-6"}>
-      {children}
-    </main>
+    <>
+      {!isHome && <BackButton />}
+
+      {isHome && <ScrollingBackground word="SHAASTRA" />}
+
+      <main className={isHome ? "pt-32" : "p-6"}>
+        {children}
+      </main>
+    </>
   );
-}
+};
 
 function App() {
   const [loading, setLoading] = useState(true);
