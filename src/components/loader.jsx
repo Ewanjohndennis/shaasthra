@@ -1,4 +1,4 @@
-import './Loader.css';
+import './loader.css';
 const Loader = () => (
   <div className="fullscreen-loader">
     <div className="loader-inner">
