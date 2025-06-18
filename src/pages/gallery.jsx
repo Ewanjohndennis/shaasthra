@@ -3,7 +3,7 @@ import React, { useState } from "react";
 const images = [
   "src/assets/img1.jpg",
   "src/assets/img2.jpg",
-  "scr/assets/img3.jpg",
+  "src/assets/img3.jpg",
   ];
 
 const Gallery = () => {
