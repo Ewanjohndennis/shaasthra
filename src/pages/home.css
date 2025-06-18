@@ -4,7 +4,7 @@ svg path {
   stroke-width: .1;
   stroke-dasharray: 700;
   stroke-dashoffset: 700;
-  animation: popup 3s ease-in-out 3 forwards;
+  animation: popup 6s ease-in-out 1 forwards;
 }
 @keyframes popup {
   0% {
