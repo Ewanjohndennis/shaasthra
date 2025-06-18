@@ -1,7 +1,7 @@
 svg path {
   fill: transparent;
   stroke:#ffffff;
-  stroke-width: .1;
+  stroke-width: .4;
   stroke-dasharray: 700;
   stroke-dashoffset: 700;
   animation: popup 6s ease-in-out 1 forwards;
